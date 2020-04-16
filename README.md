@@ -15,8 +15,8 @@ LICHESS_CLIENT_SECRET="{ lichess client secret }"
 SECRET_KEY="{ secure random key for flask sessions }"
 ```
 
-Step 3: Make .env file
-----------------------
+Step 3: Run the App
+-------------------
 run the app:
 ```
 python app.py
