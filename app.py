@@ -22,7 +22,12 @@ oauth.register('lichess')
 
 @app.route('/')
 def login():
-    redirect_uri = url_for('authorize', _external=True)
+    redirect_uri = url_for("authorize", _external=True)
+    """
+    If you need to append scopes to your requests, add the `scope=...` named argument
+    to the `.authorize_redirect` method. For admissible values refer to https://lichess.org/api#section/Authentication. 
+    Example: `return oauth.lichess.authorize_redirect(redirect_uri, scope="email:read")`
+    """
     return oauth.lichess.authorize_redirect(redirect_uri)
 
 @app.route('/authorize')
