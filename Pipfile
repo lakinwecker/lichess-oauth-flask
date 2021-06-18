@@ -3,13 +3,11 @@ name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
 
-[dev-packages]
+[scripts]
+server = "python app.py"
 
 [packages]
 authlib = "*"
 python-dotenv = "*"
 flask = "*"
 requests = "*"
-
-[requires]
-python_version = "3.8"

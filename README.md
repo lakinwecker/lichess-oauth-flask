@@ -1,38 +1,27 @@
-Step 1: Lichess OAuth App
------------------------
-
-Go here: https://lichess.org/account/oauth/app
-
-Make an app, the homepage url is: http://127.0.0.1:5000/ the callback url is: http://127.0.0.1:5000/authorize
-
-Step 2: Make .env file
+Step 1: Make .env file
 ----------------------
 make a `.env` file with the following contents:
 
 ```
-LICHESS_CLIENT_ID="{ lichess client id }"
-LICHESS_CLIENT_SECRET="{ lichess client secret }"
+LICHESS_CLIENT_ID="lichess-oauth-flask"
 SECRET_KEY="{ secure random key for flask sessions }"
 ```
 
-Step 3: Run the App
+Step 2: Run the App
 -------------------
 run the app:
 ```
 python app.py
 ```
 
-Step 4: Load the url
+Step 3: Load the URL
 --------------------
-Load this url in your browser:
-http://127.0.0.1:5000/
+load this url in your browser: http://127.0.0.1:5000/
 
-
-Step 5: ???
+Step 4: ???
 -----------
 ???
 
-Step 6: profit
+Step 5: Profit
 --------------
-Profit
-
+profit
